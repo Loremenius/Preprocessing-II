@@ -1,5 +1,12 @@
 .home {
-
+  .header{
+    padding-bottom: 20px;
+    border-bottom: 2px dashed @navigation-border;
+    h2{
+      padding: 25px 0px;
+ 
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -46,7 +53,9 @@
       border-radius: 10px;
     }
   }
-
+  .btn{
+    .button(15px, @footer-bg, white, @button-bg);
+  }
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
