@@ -187,6 +187,15 @@ img {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
 }
+@media (max-width:500px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navigation nav {
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -260,4 +269,59 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home input[type=text] {
+  padding: 5px;
+  margin: 15px 0px;
+  width: 100%;
+  border: 2px solid #C0C0C0;
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+  background-color: white;
+}
+.home input[type=submit] {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #17A2B8;
+  color: white;
+  border: 1px solid #FFEBCD;
+  border-radius: 15px;
+}
+.home form {
+  padding-bottom: 15px;
+}
+@media (max-width:500px) {
+  .container {
+    width: 450px;
+  }
+  .home .content-section {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .content-destination {
+    width: 100%;
+  }
+  .home .content-pick {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
